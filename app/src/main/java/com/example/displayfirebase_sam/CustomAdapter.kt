@@ -26,7 +26,7 @@ class CustomAdapter(var context: Context, var data:ArrayList<User>):BaseAdapter(
         var viewHolder:ViewHolder
         if (convertView == null){
             var layout = LayoutInflater.from(context)
-            view = layout.inflate(R.layout.myitem_layout,parent,false)
+            view = layout.inflate(R.layout.users_layout,parent,false)
             viewHolder = ViewHolder(view)
             view.tag = viewHolder
         }else{
